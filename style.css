@@ -1,0 +1,402 @@
+/*
+Theme Name: Hangg Simple
+Theme URI: http://hangg.com
+Author: Philipp Hangg
+Author URI: http://hangg.com
+Description: A simple and minimalistic theme 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:  white, black, two-columns, right-sidebar
+Text Domain: hanggsimple
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ----------------------  FIRST  -------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------  STRUCTURE  -------------------------------------*/
+
+body{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    background-color: #ffffff
+
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+   font-size:1.2em; 
+}
+
+a {
+    text-decoration:none;
+    color: black;
+}
+
+a:hover{
+    color: darkgrey;
+}
+
+ol, ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#outer_wrapper{
+    max-width: 892px; 
+    min-width: 669px;
+    border: 2px solid black;
+    border-radius: 9px;
+    box-shadow: 10px 10px 5px gray;
+    margin: auto;
+    padding:20px 0 20px 20px;
+    background-color: white;
+}
+
+
+fieldset{
+    border: 1px solid #999999;
+    display: inline;
+    padding: 2px;
+    margin:0 0 0.5em 0;
+}
+
+legend{
+    //font-size: 0.8em;
+}
+
+input{
+  font-size:1em;  
+}
+
+#previous_next{
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#next_span{
+    float: right;
+}
+
+/* ----------------------  HEADER  -------------------------------------*/
+
+header{
+    
+}
+
+#header_wrapper{
+    overflow: hidden;
+}
+
+/* for word-break heading give width */
+#heading{
+    float: right;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    word-wrap: break-word;
+    //width: 8em;
+    text-align: right;
+}
+
+#title_description{
+    font-size: 0.1em;
+    color: #ffffff;
+}
+
+#headerimg{
+    float: left;
+}
+
+#header_nav{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: block;
+    font-size: 2em;
+}
+
+#header_nav ul {
+    overflow: hidden;
+}
+
+#header_nav li {
+    float: left;
+}
+
+#header_nav a{
+    text-align:left;
+    display: block;
+}
+
+#header_nav a::before{
+    
+}
+
+#header_nav a::after{
+    content: '---';
+    color: #ffffff;
+}
+
+
+/* ----------------------  MIDDLE  -------------------------------------*/
+
+#middle_wrapper{
+    overflow: hidden;
+}
+
+#content{
+    float: left;
+    width:649px;
+    margin-right: 20px;
+    margin-bottom: 4em;
+    
+}
+
+#wide_content{
+    margin-right:20px;
+}
+
+
+/* ----------------------  POSTS  -------------------------------------*/
+
+.post{
+    margin-bottom: 2em;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 6px;
+    word-wrap: break-word;
+}
+
+.post_titel{
+    margin-bottom: 0.2em;
+    word-wrap: break-word;
+}
+
+.post_meta{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.post_meta a{
+    text-decoration: underline;
+}
+
+.post_content a{
+    text-decoration: underline;
+}
+
+.post_content{
+    word-wrap: break-word;
+    line-height: 150%;
+}
+
+#post_thumbnail{
+    margin-bottom: 0.8em;
+    max-width: 535px;
+    overflow: hidden;
+}
+
+.post_image_full{
+    
+}
+
+.more-link{
+    text-decoration: underline;
+}
+
+.more-link::before{
+    content: "...";
+}
+
+.singlepost .post_meta{
+    margin-bottom: 2em;
+}
+
+.singlepost #post_thumbnail{
+    margin-bottom: 1em;
+}
+
+code {
+    padding: 5px;
+    border: 1px solid #888888;
+    margin: 5px;
+    width: 520px;
+    display:block;
+    font: 90% Courier, Monospace;
+    background-color: #eeeeee;
+}
+
+
+/* ----------------------  SIDEBAR -------------------------------------*/
+
+
+.widget{
+    float:left;
+    width: 181px;
+    min-height: 181px;
+    border: 1px solid #999999;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 2em;
+    margin-right: 20px;
+}
+
+.widget-title{
+    font-size: 1.2em;
+    margin-bottom:0.8em;
+}
+
+#s{
+    width:168px;    
+}
+
+#searchsubmit{
+    background-color: white;
+    border: 2px solid #999999;
+    margin: 0.5em 0 0 0;
+}
+
+
+/* ----------------------  COMMENTS ------------------------------------*/
+
+#comments{
+   margin-top: 4em; 
+}
+
+#comments_title{
+    margin-bottom: 2em;
+}
+
+.comment_container{
+    margin-bottom: 1em;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 6px;
+    line-height: 130%;
+}
+
+.comment_meta{
+    
+}
+
+#comment_unaproved{
+    margin-top: 1em;
+    color:red;
+}
+
+#comment{
+    min-width: 614px;
+    max-width:614px;
+}
+
+#respond input{
+    max-width: 613px;
+}
+
+.comment-notes{
+    font-size:0.8em;
+    margin-bottom: 0.5em;
+}
+
+#respond{
+    border: 1px solid #999999;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 3em;
+}
+
+#reply-title{
+    font-size:1em;
+    margin-bottom: 0.5em;
+}
+
+.logged-in-as{
+    margin-bottom: 1em;
+}
+
+#submit{
+    background-color: white;
+    border: 2px solid #999999;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+/* ----------------------  AUTHOR  -------------------------------------*/
+.author_post_list{
+    margin-bottom: 1em;
+}
+
+.author_field{
+    margin-bottom: 1.5em;
+}
+
+.author_field p{
+    border: 1px solid #999999;
+    padding: 5px;
+}
+
+.author_field ul{
+    border: 1px solid #999999;
+    padding: 5px;
+}
+
+/* ----------------------  FOOTER  -------------------------------------*/
+
+footer{
+    margin-top: 70px;
+    text-align: center;
+}
