@@ -1,0 +1,1 @@
+# hangg-simple-wordpress-theme
